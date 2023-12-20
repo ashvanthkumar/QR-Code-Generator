@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(43, 43, 43);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.container{
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    border-radius: 10px;
+}
+
+.container p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.container input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #26cb1a;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 7px;
+}
+
+.container button{
+    width: 100%;
+    height: 50px;
+    background: #494cca;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#imgBox{
+    width: 200px;
+    border-radius: 4px;
+    max-height: 300;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#imgBox img{
+    width: 100%;
+    padding: 10px  ;
+}
+
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-2px);
+    }
+    50%{
+        transform: translate(0);
+    }
+    75%{
+        transform: translate(2px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
